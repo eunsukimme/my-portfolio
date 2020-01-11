@@ -17,8 +17,6 @@ const MessageContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  border: 2px solid black;
-
   @media (max-width: 500px) {
     width: 90%;
   }
@@ -36,8 +34,6 @@ const IconContainer = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-
-  border: 2px solid black;
 `;
 
 const Icon = styled.a`
