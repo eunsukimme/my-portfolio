@@ -37,6 +37,7 @@ class App extends React.Component {
       return (
         <Project
           key={i}
+          index={i}
           title={el.title}
           description={el.description}
           technology={el.technology}

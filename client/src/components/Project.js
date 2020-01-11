@@ -17,7 +17,7 @@ const Container = styled.div`
 `;
 
 const ProjectContainer = styled.div`
-  width: 66%;
+  width: 60%;
 
   display: flex;
   flex-direction: column;
@@ -25,6 +25,7 @@ const ProjectContainer = styled.div`
 
 const Main = styled.div`
   display: flex;
+  flex-direction: ${props => (props.index % 2 ? "row-reverse" : "row")};
 `;
 const ImageContainer = styled.div`
   width: 65%;
@@ -100,7 +101,7 @@ class Project extends Component {
     return (
       <Container background={this.props.background}>
         <ProjectContainer>
-          <Main>
+          <Main index={this.props.index}>
             <ImageContainer>
               <Image image_url={this.props.image_url} />
             </ImageContainer>
@@ -118,7 +119,7 @@ class Project extends Component {
                   <img
                     key={i}
                     src={stack}
-                    style={{ height: "40px", margin: "5px 10px" }}
+                    style={{ height: "36px", margin: "5px 10px" }}
                   />
                 );
               })}
