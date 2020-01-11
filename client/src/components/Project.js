@@ -75,14 +75,24 @@ const Stacks = styled.div`
   justify-content: center;
 `;
 
-const Button = styled.div`
+const Button = styled.a`
   width: 200px;
   padding: 6px 12px;
 
+  color: white;
+  text-decoration: none;
   text-align: center;
+  font-weight: 400;
+
   background-color: #549657;
   border-radius: 5px;
   box-shadow: 0px 2px 5px 1px darkgrey;
+
+  z-index: 2;
+
+  :hover {
+    background-color: #327635;
+  }
 `;
 
 class Project extends Component {
@@ -113,17 +123,10 @@ class Project extends Component {
                 );
               })}
             </Stacks>
-            <Button to={`/${this.props.title}`}>
-              <Link
-                to={`/${this.props.title}`}
-                style={{
-                  color: "white",
-                  textDecoration: "none",
-                  fontWeight: "400"
-                }}
-              >
-                View app
-              </Link>
+            <Button href={this.props.link} target="_blank">
+              {this.props.status === "available"
+                ? "Go to app"
+                : "View on Github"}
             </Button>
           </Sub>
         </ProjectContainer>

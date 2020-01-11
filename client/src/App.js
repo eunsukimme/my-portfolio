@@ -43,6 +43,7 @@ class App extends React.Component {
           image_url={el.image_url}
           stacks={el.stacks}
           link={el.link}
+          status={el.status}
           background={i % 2 ? "white" : "lightgrey"}
         />
       );
