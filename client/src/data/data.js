@@ -6,8 +6,6 @@ import pknu_notifier from "../images/main/pknu_notifier.png";
 import first_planet from "../images/main/first_planet.png";
 // tech logos
 import aws from "../images/tech/aws.png";
-import aws_s3 from "../images/tech/aws_s3.png";
-import aws_rds from "../images/tech/aws_rds.png";
 import beautifulsoup from "../images/tech/beautifulsoup.png";
 import c_sharp from "../images/tech/c_sharp.png";
 import d3 from "../images/tech/d3.png";

@@ -5,7 +5,7 @@ import Profile from "./components/Profile";
 import data from "./data/data";
 import Project from "./components/Project";
 import ProjectDetail from "./components/ProjectDetail";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const Container = styled.div`
   width: 100%;

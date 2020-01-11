@@ -25,7 +25,7 @@ const Image = styled.div`
   box-shadow: 0px 4px 6px 2px lightgrey;
 `;
 const ProfileContainer = styled.div`
-  width: 600px;
+  width: 90%;
 
   display: flex;
   flex-direction: column;
@@ -41,6 +41,7 @@ const Position = styled.div`
   font-size: 1.5rem;
 `;
 const Introduction = styled.div`
+  text-align: center;
   margin-bottom: 6px;
   font-size: 1rem;
   color: #4a4e69;
@@ -67,6 +68,7 @@ class Profile extends Component {
             <a
               href="https://eunsukim.me"
               target="_blank"
+              rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "#337ab7" }}
             >
               eunsukim.me

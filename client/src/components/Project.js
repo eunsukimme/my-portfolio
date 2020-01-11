@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Container = styled.div`
   width: 100%;
-  height: 580px;
+  min-height: 580px;
 
   display: flex;
   flex-direction: column;
@@ -14,6 +13,13 @@ const Container = styled.div`
   background-color: ${props => props.background};
 
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+
+  @media (max-width: 1215px) {
+    padding: 40px;
+  }
+  @media (max-width: 780px) {
+    padding: 40px 20px;
+  }
 `;
 
 const ProjectContainer = styled.div`
@@ -21,11 +27,24 @@ const ProjectContainer = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1215px) {
+    width: 80%;
+  }
+  @media (max-width: 780px) {
+    width: 100%;
+    padding: 20px 0px;
+  }
 `;
 
 const Main = styled.div`
   display: flex;
   flex-direction: ${props => (props.index % 2 ? "row-reverse" : "row")};
+  align-items: center;
+
+  @media (max-width: 1215px) {
+    flex-direction: column;
+  }
 `;
 const ImageContainer = styled.div`
   width: 65%;
@@ -33,6 +52,10 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1215px) {
+    width: 100%;
+  }
 `;
 
 const Image = styled.div`
@@ -40,17 +63,35 @@ const Image = styled.div`
   height: 300px;
   background-image: url(${props => props.image_url});
   background-size: contain;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
+
+  @media (max-width: 1215px) {
+    height: 260px;
+  }
+  @media (max-width: 780px) {
+    height: 200px;
+  }
 `;
 
 const InfoContainer = styled.div`
   width: 35%;
   padding: 20px;
+
+  @media (max-width: 1215px) {
+    width: 100%;
+  }
+  @media (max-width: 780px) {
+    padding: 10px;
+  }
 `;
-const Title = styled.div`
+const Title = styled.a`
   padding-bottom: 10px;
+  line-height: 3rem;
   font-size: 1.8rem;
   font-weight: regular;
+  color: #337ab7;
+  text-decoration: none;
 `;
 const SemiTitle = styled.div`
   padding: 8px 0px;
@@ -63,8 +104,6 @@ const Description = styled.div`
 `;
 
 const Sub = styled.div`
-  height: 110px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -72,7 +111,9 @@ const Sub = styled.div`
 `;
 
 const Stacks = styled.div`
+  margin: 10px 0px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 `;
 
@@ -106,7 +147,13 @@ class Project extends Component {
               <Image image_url={this.props.image_url} />
             </ImageContainer>
             <InfoContainer>
-              <Title>{this.props.title}</Title>
+              <Title
+                href={this.props.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {this.props.title}
+              </Title>
               <Description>{this.props.description}</Description>
               <SemiTitle>Technology</SemiTitle>
               <Description>{this.props.technology}</Description>
@@ -119,12 +166,17 @@ class Project extends Component {
                   <img
                     key={i}
                     src={stack}
+                    alt={this.props.title}
                     style={{ height: "36px", margin: "5px 10px" }}
                   />
                 );
               })}
             </Stacks>
-            <Button href={this.props.link} target="_blank">
+            <Button
+              href={this.props.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {this.props.status === "available"
                 ? "Go to app"
                 : "View on Github"}

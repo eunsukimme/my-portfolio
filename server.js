@@ -12,7 +12,7 @@ app.get("/*", (req, res, next) => {
 
 // heroku dyno를 5분 주기로 계속 깨우는 Interval 설정
 setInterval(function() {
-  http.get("https://eunsu-portfolio.herokuapp.com");
+  http.get("http://eunsu-portfolio.herokuapp.com");
 }, 1000 * 60 * 5);
 
 app.listen(PORT, () => {
