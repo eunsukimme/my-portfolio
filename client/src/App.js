@@ -5,6 +5,7 @@ import Profile from "./components/Profile";
 import data from "./data/data";
 import Project from "./components/Project";
 import ProjectDetail from "./components/ProjectDetail";
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const Container = styled.div`
@@ -66,7 +67,9 @@ class App extends React.Component {
                 <Profile />
               </ProfileContainer>
               <MainContainer>{this.state.projects}</MainContainer>
-              <FooterContainer>footer</FooterContainer>
+              <FooterContainer>
+                <Footer />
+              </FooterContainer>
             </Container>
           </Route>
           {/* project details */}
