@@ -117,9 +117,16 @@ const Stacks = styled.div`
   justify-content: center;
 `;
 
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`;
+
 const Button = styled.a`
   width: 200px;
   padding: 6px 12px;
+  margin: 10px;
 
   color: white;
   text-decoration: none;
@@ -172,15 +179,24 @@ class Project extends Component {
                 );
               })}
             </Stacks>
-            <Button
-              href={this.props.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {this.props.status === "available"
-                ? "Go to app"
-                : "View on Github"}
-            </Button>
+            <ButtonContainer>
+              <Button
+                href={encodeURI(this.props.title)}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                About this app
+              </Button>
+              <Button
+                href={this.props.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {this.props.status === "available"
+                  ? "Go to app"
+                  : "View on Github"}
+              </Button>
+            </ButtonContainer>
           </Sub>
         </ProjectContainer>
       </Container>

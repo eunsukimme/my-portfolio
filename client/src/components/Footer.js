@@ -48,35 +48,47 @@ class Footer extends Component {
           <Main>Let's make things that make a diffrence</Main>
           <IconContainer>
             <Icon href="mailto:eunsu.dev@gmail.com">
-              <i style={{ fontSize: "1.5rem" }} class="far fa-envelope"></i>
+              <i style={{ fontSize: "1.5rem" }} className="far fa-envelope"></i>
             </Icon>
             <Icon
               href="https://www.facebook.com/profile.php?id=100003647254099"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i style={{ fontSize: "1.5rem" }} class="fab fa-facebook-f"></i>
+              <i
+                style={{ fontSize: "1.5rem" }}
+                className="fab fa-facebook-f"
+              ></i>
             </Icon>
             <Icon
               href="https://www.instagram.com/eunsu_wag/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i style={{ fontSize: "1.5rem" }} class="fab fa-instagram"></i>
+              <i
+                style={{ fontSize: "1.5rem" }}
+                className="fab fa-instagram"
+              ></i>
             </Icon>
             <Icon
               href="https://www.github.com/eunsukimme"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i style={{ fontSize: "1.5rem" }} class="fab fa-github-alt"></i>
+              <i
+                style={{ fontSize: "1.5rem" }}
+                className="fab fa-github-alt"
+              ></i>
             </Icon>
             <Icon
               href="https://www.linkedin.com/in/eunsukimme/?locale=en_US"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i style={{ fontSize: "1.5rem" }} class="fab fa-linkedin-in"></i>
+              <i
+                style={{ fontSize: "1.5rem" }}
+                className="fab fa-linkedin-in"
+              ></i>
             </Icon>
           </IconContainer>
         </MessageContainer>

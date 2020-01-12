@@ -67,14 +67,22 @@ class App extends React.Component {
                 <Profile />
               </ProfileContainer>
               <MainContainer>{this.state.projects}</MainContainer>
-              <FooterContainer>
-                <Footer />
-              </FooterContainer>
             </Container>
           </Route>
           {/* project details */}
-          <Route path="/:title" component={ProjectDetail} />
+          {this.state.data.map((el, i) => {
+            return (
+              <Route
+                key={i}
+                path={`/${el.title}`}
+                render={props => <ProjectDetail {...props} data={data[i]} />}
+              />
+            );
+          })}
         </Switch>
+        <FooterContainer>
+          <Footer />
+        </FooterContainer>
       </Router>
     );
   }
