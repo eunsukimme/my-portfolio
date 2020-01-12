@@ -39,6 +39,8 @@ import problem from "../images/details/istc/problem.png";
 import istc_process from "../images/details/istc/istc_process.png";
 import hyperledger_logo from "../images/details/istc/hyperledger_logo.png";
 import istc_prototype from "../images/details/istc/istc_prototype.gif";
+/// PKNU Notifier
+import pknu_notifier_process from "../images/details/pknu_notifier/pknu_notifier_process.jpeg";
 
 const data = [
   {
@@ -240,11 +242,32 @@ const data = [
     link: "https://github.com/eunsukimme/PKNU-notice-parser",
     status: "unavailable",
     detail: {
-      motivation: [],
-      define: [],
-      ideate: [],
-      prototype: [],
-      test: []
+      motivation: [
+        `when I enter university, I got an advice that I'd better to check school announcements everyday. Because The school announcements 
+        included important schedules as well as informative programs to help students. So I tried to go to the school homepage and 
+        check the notices, but after a while I neglected to check the notices. As a result, I missed some good opportunities that 
+        might have helped me, and I missed important milestones such as paying my dormitory fees. When I shared this with others, 
+        I realized that some of my friends had similar problems like me, and I wondered how to solve these problems.`
+      ],
+      define: [
+        `
+        I was studying Python for fun at the time, and I came across a Python module called Beautifulsoup that parses HTML 
+        and gives me access to each element. So I thought that I could solve the problem by using this module.`
+      ],
+      ideate: [
+        `So I wrote a Python script that requests the school announcement page to get an HTML file and then parses the announcement 
+        titles with Beautifulsoup to send a notification to the Slack channel. In addition, I have developed a software that 
+        periodically announces notices by adding them to the crontab task list in AWS EC2 (Ubuntu).`
+      ],
+      what_i_learned: [
+        `
+        This program allowed me to check notices immediately without missing. I was very happy whenever my friends used this 
+        program and thanked me for making it. It was a moment when I realized how rewarding it is to relieve the discomforts of 
+        those around me. Perhaps I felt that my skills could solve many of the problems I experience in our society today, and 
+        that became the reason why I develope today. It is my future hope and vision to continue studying SW technology and 
+        become a developer who solves various social problems with software.`
+      ],
+      pknu_notifier_process: pknu_notifier_process
     }
   },
   {
