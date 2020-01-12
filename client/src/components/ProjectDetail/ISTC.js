@@ -4,7 +4,6 @@ import {
   Section,
   SectionTitle,
   SectionDescription,
-  ImageContainer,
   MultipleImageContainer,
   SmallImage,
   Image,

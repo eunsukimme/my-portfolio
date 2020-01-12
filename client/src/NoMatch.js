@@ -18,7 +18,9 @@ class NoMatch extends Component {
   render() {
     return (
       <Container>
-        <Message>Oops, you found hidden page!😜</Message>
+        <Message>
+          Oops, you found hidden page!<span role="img">😜</span>
+        </Message>
         <Message>
           Go back to{" "}
           <a

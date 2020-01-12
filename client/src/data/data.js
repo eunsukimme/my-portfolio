@@ -28,19 +28,22 @@ import aws_mechanical_turk from "../images/details/common_bound/aws_mechanical_t
 import figure_eight from "../images/details/common_bound/figure_eight.png";
 import design from "../images/details/common_bound/design.jpg";
 /// Overfetch
-import main from "../images/details/overfetch/main.png";
+import main from "../images/details/overfetch/main.jpg";
 import overwatch_statistics from "../images/details/overfetch/overwatch_statistics.png";
 import process from "../images/details/overfetch/process.png";
 import prototype1 from "../images/details/overfetch/prototype1.jpg";
 import prototype2 from "../images/details/overfetch/prototype2.jpg";
 /// ISTC
-import istc_main from "../images/details/istc/main.png";
-import problem from "../images/details/istc/problem.png";
+import istc_main from "../images/details/istc/main.jpg";
+import problem from "../images/details/istc/problem.jpg";
 import istc_process from "../images/details/istc/istc_process.png";
 import hyperledger_logo from "../images/details/istc/hyperledger_logo.png";
 import istc_prototype from "../images/details/istc/istc_prototype.gif";
 /// PKNU Notifier
 import pknu_notifier_process from "../images/details/pknu_notifier/pknu_notifier_process.jpeg";
+/// First Planet
+import first_planet_main from "../images/details/first_planet/first_planet_main.jpg";
+import first_planet_design from "../images/details/first_planet/design.jpg";
 
 const data = [
   {
@@ -280,11 +283,29 @@ const data = [
     link: "https://store.steampowered.com/app/993220/FirstPlanet",
     status: "available",
     detail: {
-      motivation: [],
-      define: [],
+      motivation: [
+        `I came across a game creation tool called GameMaker on the Internet at 10 years old. GameMaker is a program that helps 
+        to make a game with logic blocks, without coding. I used this to make simple mini-games, and it made me delighted whenever 
+        I looked at my friends having fun with my games. I didn't make great games, but it was great happiness for me to entertain 
+        people around me through my games. That's became the reason why I create this game.`
+      ],
+      define: [
+        `I used Unity and C# to create a space planet management game, and I had to study for myself because I was new to Unity. 
+        So, while reading the official documentation, I tried to understand how to take advantage of the high-level API, and I 
+        followed some official Unity tutorials to understand the process of creating a game.`
+      ],
       ideate: [],
       prototype: [],
-      test: []
+      test: [],
+      what_i_learned: [
+        `I was in charge of developing a planetary weapon that looks at the mouse when the angle between weapon and the mouse was 
+        in a certain range in three-dimensional space. This naturally led me to a better understanding of the mathematics used in 
+        developing games. Thankfully, we won the grand prize in the competition and I was able to experience integrating knowledge 
+        that I only knew theoretically into real program development. Therefore, my interest and passion for development increased 
+        gradually.`
+      ],
+      first_planet_main: first_planet_main,
+      first_planet_design: first_planet_design
     }
   }
 ];
