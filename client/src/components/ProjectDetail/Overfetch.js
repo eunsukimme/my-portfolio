@@ -7,7 +7,6 @@ import {
   ImageContainer,
   MultipleImageContainer,
   Image,
-  SmallImage,
   IntroSection,
   IntroMain,
   IntroTitle,

@@ -6,6 +6,7 @@ import data from "./data/data";
 import Project from "./components/Project";
 import ProjectDetail from "./components/ProjectDetail";
 import Footer from "./components/Footer";
+import NoMatch from "./NoMatch";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const Container = styled.div`
@@ -79,6 +80,8 @@ class App extends React.Component {
               />
             );
           })}
+          {/* 404 Not Found */}
+          <Route component={NoMatch} />
         </Switch>
         <FooterContainer>
           <Footer />

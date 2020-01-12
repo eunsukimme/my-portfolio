@@ -22,19 +22,22 @@ import styled_components from "../images/tech/styled_components.png";
 import unity from "../images/tech/unity.png";
 // details
 /// Common Bound
-import common_bound_main from "../images/details/common_bound/main.png";
+import common_bound_main from "../images/details/common_bound/main.jpg";
 import ai_research from "../images/details/common_bound/ai_research.png";
 import aws_mechanical_turk from "../images/details/common_bound/aws_mechanical_turk.jpg";
 import figure_eight from "../images/details/common_bound/figure_eight.png";
-import design1 from "../images/details/common_bound/design1.jpeg";
-import design2 from "../images/details/common_bound/design2.jpeg";
-import design3 from "../images/details/common_bound/design3.jpeg";
+import design from "../images/details/common_bound/design.jpg";
 /// Overfetch
 import main from "../images/details/overfetch/main.png";
 import overwatch_statistics from "../images/details/overfetch/overwatch_statistics.png";
 import process from "../images/details/overfetch/process.png";
 import prototype1 from "../images/details/overfetch/prototype1.jpg";
 import prototype2 from "../images/details/overfetch/prototype2.jpg";
+/// ISTC
+import istc_main from "../images/details/istc/main.png";
+import problem from "../images/details/istc/problem.png";
+import istc_process from "../images/details/istc/istc_process.png";
+import hyperledger_logo from "../images/details/istc/hyperledger_logo.png";
 
 const data = [
   {
@@ -103,9 +106,7 @@ const data = [
       ai_research_image_url: ai_research,
       aws_mechanical_turk: aws_mechanical_turk,
       figure_eight: figure_eight,
-      design1: design1,
-      design2: design2,
-      design3: design3
+      design: design
     }
   },
   {
@@ -174,11 +175,40 @@ const data = [
       "https://github.com/eunsukimme/Translation-Content-Quality-Assurance-System",
     status: "unavailable",
     detail: {
-      motivation: [],
-      define: [],
+      motivation: [
+        `In Korea, the Frozen 2, which was released in the winter of 2019, was once controversial due to mistranslations. At the 
+        beginning of the film, Anna sat down on the mat with Olaf and asked, “Enjoying your new permafrost?”. It translated to 
+        “Do you like the new ice sheet?”.  Because Olaf melts during the non-winter seasons, Elsa has made a snow cloud over Olaf, 
+        which means that Elsa now has a permanent freeze spell on Olaf's body. It was pointed out by translating it into 'ice sheet'`,
+        `Similarly, the Avengers: Infinity War was controversial. In the movie, when Tanos take time stone off from Dr. Strange, 
+        Dr. Strange told Iron Man “We ’re in the end game now.” There was controversy because the translator translated it as 
+        “I don't have any hope now.” 'End game' is the 'final stage' in chess terms. By Translating “It's the last step” into “No hope,” 
+        the audience's expectations have gone with just one word. Our team thought that this would create dissatisfaction with 
+        movie consumers, so we designed a dApp that transparently discloses the translation records of the content distributed 
+        through translation.`
+      ],
+      define: [
+        `Intellectual property content is diverse, including literature, books, and animations, and because such content is produced 
+        in various cultures and languages, it is localized and distributed through translators and inspection. However, the existing 
+        translation system is informal, so that relevant stakeholders, such as the actual inspector and the provider, cannot 
+        transparently check the request and the process, and it is difficult to take responsibility for the results of the work. 
+        In addition, in order to improve the quality of translations, sharing information like mutual agreement and approval 
+        procedures are required.`,
+        `In order to solve these existing system problems and configure the system to satisfy the requirements, we proposed and 
+        implemented a translation content inspection system based on blockchain. Blockchain was initially used as a cryptocurrency 
+        trading platform such as Bitcoin, but recently, it is used for the purpose of decentralized process processing and various 
+        services in the enterprise due to the irreversibility, integrity, and reliability provided by the blockchain.`,
+        `Among the private blockchain platforms, Hyperledger Fabric has advantages such as identity management, ease of 
+        implementation, and fast processing speed. Therefore, we implemented a translation content inspection system based on 
+        Hyperledger Fabric Blockchain, considering internal process, reputation system, and safety.`
+      ],
       ideate: [],
       prototype: [],
-      test: []
+      test: [],
+      istc_main: istc_main,
+      problem: problem,
+      istc_process: istc_process,
+      hyperledger_logo: hyperledger_logo
     }
   },
   {

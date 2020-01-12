@@ -68,7 +68,7 @@ class CommonBound extends Component {
           })}
         </Section>
         <MainImageContainer>
-          <Image src={data.detail.design2} />
+          <Image src={data.detail.design} />
         </MainImageContainer>
         <Section>
           <SectionTitle>Prototype</SectionTitle>
