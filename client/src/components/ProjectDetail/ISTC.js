@@ -82,24 +82,8 @@ class ISTC extends Component {
           })}
         </Section>
         <MultipleImageContainer direction="row">
-          <Image src={data.detail.prototype1} />
-          <Image src={data.detail.prototype2} />
-          <figcaption
-            style={{ color: "grey", textAlign: "center", padding: "16px" }}
-          >
-            Early sketchs of Overfetch
-          </figcaption>
-          <Image src="https://github.com/eunsukimme/Overfetch/raw/master/document/readme/play.gif" />
-          <figcaption
-            style={{ color: "grey", textAlign: "center", paddingTop: "16px" }}
-          >
-            Overfetch DEMO
-          </figcaption>
+          <Image src={data.detail.istc_prototype} />
         </MultipleImageContainer>
-        <Section>
-          <SectionTitle>Ongoing plan</SectionTitle>
-          <SectionDescription>{data.detail.ongoing}</SectionDescription>
-        </Section>
         <Section>
           <SectionTitle>Acknowledgment</SectionTitle>
           <SectionDescription>{data.detail.acknowledgment}</SectionDescription>

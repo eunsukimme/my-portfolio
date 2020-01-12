@@ -38,6 +38,7 @@ import istc_main from "../images/details/istc/main.png";
 import problem from "../images/details/istc/problem.png";
 import istc_process from "../images/details/istc/istc_process.png";
 import hyperledger_logo from "../images/details/istc/hyperledger_logo.png";
+import istc_prototype from "../images/details/istc/istc_prototype.gif";
 
 const data = [
   {
@@ -202,13 +203,30 @@ const data = [
         implementation, and fast processing speed. Therefore, we implemented a translation content inspection system based on 
         Hyperledger Fabric Blockchain, considering internal process, reputation system, and safety.`
       ],
-      ideate: [],
-      prototype: [],
+      ideate: [
+        `The key participants consist of registrants who request quality inspection of the translated content and inspectors that 
+        guarantee quality of translation. Each can participate after the identity certificate has been issued through the Membership 
+        Service Provider (MSP) to participate in the proposed system. Those who participate in the translation will vote to select 
+        the best expression among the translations, and the participants who perform the translation will receive an in-platform reward.
+        The figure below illustrates the flow of this dApp transaction.`
+      ],
+      prototype: [
+        `First, we created a model file (.cto) using the Hyperledger Composer Modeling language. So we defined assets, participants 
+        and transactions. Next, We made a function(.js) that can execute the transaction defined in the model file using javascript. 
+        Finally, we created an access management file (.acl) to suggest access rules.`,
+        `Next, We defined our business network and then packaged it in a distributable form (.bna). And we distributed this bna file to the 
+        Hyperledger fabric and started the network. Because Hyperledger Composer automatically creates a REST API server and Angular 4
+        application, that we could use to build our web application, so we just needed to focus on business network logic.`
+      ],
       test: [],
+      acknowledgment: [
+        `This project was carried out with the support of the Pukyong National University LINC + project.`
+      ],
       istc_main: istc_main,
       problem: problem,
       istc_process: istc_process,
-      hyperledger_logo: hyperledger_logo
+      hyperledger_logo: hyperledger_logo,
+      istc_prototype: istc_prototype
     }
   },
   {
