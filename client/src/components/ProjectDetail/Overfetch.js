@@ -25,7 +25,7 @@ class Overfetch extends Component {
             <IntroTitle>{data.title}</IntroTitle>
             <IntroDate>
               <span>Lead Developer</span>
-              <span>Dec 2018</span>
+              <span>Mar 2019</span>
             </IntroDate>
             <SectionDescription>{data.description}</SectionDescription>
           </IntroMain>

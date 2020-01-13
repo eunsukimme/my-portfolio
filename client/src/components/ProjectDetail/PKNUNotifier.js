@@ -23,7 +23,7 @@ class PKNUNotifier extends Component {
             <IntroTitle>{data.title}</IntroTitle>
             <IntroDate>
               <span>dApp Developer</span>
-              <span>Mar 2019</span>
+              <span>May 2018</span>
             </IntroDate>
             <SectionDescription>{data.description}</SectionDescription>
           </IntroMain>

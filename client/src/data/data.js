@@ -68,25 +68,25 @@ const data = [
       motivation: [
         `When I fell in love with machine learning, I wanted to create an application using machine learning but 
       whenever I came up with ideas, I realized that it was very tough to collect data to train models. I told my team and 
-      friends about these worries, and I realized that there are so many friends having a similar problem with me. Even members 
-      of the Facebook group of tensorflow users in Korea have often complained about this problem. At that moment, I realized that 
+      friends about these worries and I realized that there are so many friends having a similar problem with me. Even members 
+      of the Facebook group of TensorFlow users in Korea have often complained about this problem. At that moment, I realized that 
       this was not only my problem. So I started to think a lot about this problem.`
       ],
       define: [
-        `In order to create the data needed for machine learning and deep learning, it must be accompanied by labeling data. 
+        `To create the data needed for machine learning and deep learning, it must be accompanied by labeling data. 
       This behavior is based on a person's cognitive abilities, but it's so cumbersome and time consuming for AI technicians to label data alone. 
-      I thought that ordinary people could participate in labeling, except when dealing with data in special field such as healthcare and law. 
-      Therefore, in order to easily obtain the data used for machine learning, I thought that many people should be allowed to 
+      I thought that ordinary people could participate in labeling, except when dealing with data in a special field such as healthcare and law. 
+      Therefore, to easily obtain the data used for machine learning, I thought that many people should be allowed to 
       participate and there must be an intermediary to manage these process.`,
         `I started to search for similar businesses. Overseas, there were AWS Mechanical Turk and Figure Eight, but it was hard to 
-        find a business to benchmark in Korea. That's the main reason why machine learning researcher and engineers in Korea have 
-        difficulty for getting data. Therefore, we began to develop a easy-to-use platform that made it easy to gather data for korean
+        find a business to benchmark in Korea. That's the main reason why machine learning researchers and engineers in Korea have 
+        difficulty getting data. Therefore, we began to develop an easy-to-use platform that made it easy to gather data for Korean
         machine learning engineers.`
       ],
       ideate: [
         `Here's how We thought about setting a strategy to differentiate our service from the competition: We focused on specific data(image, audio, etc.), 
         to speed up data production through semi-automatic labeling, and automatically inspecting the produced data. In other words, 
-        we planned to create an interface that allows worker to use a high-performance model in a specific task during labeling. 
+        we planned to create an interface that allows the worker to use a high-performance model in a specific task during labeling. 
         It is also about creating machine learning models that predict the quality of the produced data based on event information 
         (labeling times, etc.) that occur while labeling the data.  `
       ],
@@ -97,12 +97,12 @@ const data = [
         validation of data. We also developed a page where labeler can check the details of their points and the data they created.`,
         `Next, we developed a project creation page that allows data requesters to gather the data producers by specifying the 
         required data. Finally, We provided a monitoring page where data requester can immediately see the data produced 
-        since that time. In addition, the data can be directly downloaded in the form of CSV, JSON, etc.`
+        since that time. Also, the data can be directly downloaded in the form of CSV, JSON, etc.`
       ],
       result: [
         `Unfortunately, we could not make huge business accomplishments during the supporting period, but we were able to empathize with 
         the need for data from machine learning researchers and see the potential growth of the data acquisition market. After all of 
-        the initial research, planning and testing, it’s nice to see a product get released into the wild, spread its wings and 
+        the initial research, planning, and testing, it’s nice to see a product get released into the wild, spread its wings and 
         take flight.`
       ],
       acknowledgment: [
@@ -120,7 +120,7 @@ const data = [
     description:
       "Overfetch is a service for visualizing game data of Overwatch. It allows you to save time to view, understand, and analyze overwatch statistics",
     technology:
-      "Overfetch uses D3 for visualizing dashboard to represent analyzed data, with react for easy page manipulation. On the backend an Express/Node.js app lives on a Heroku dyno that acts as a middleware to crawl Overwatch official homepage and return the information to the user",
+      "Overfetch uses D3 for visualizing dashboard to represent analyzed data, with react for easy page manipulation. On the backend, an Express/Node.js app lives on a Heroku dyno that acts as a middleware to crawl Overwatch official homepage and return the information to the user",
     image_url: overfetch_title_logo,
     stacks: [javascript, react, nodejs, mongodb, heroku, d3],
     link: "https://overfetch.herokuapp.com",
@@ -148,14 +148,14 @@ const data = [
       ],
       prototype: [
         `We benchmarked the design of the existing search service OP.GG, and crawled data from the Overwatch official homepage with 
-        cheerio.js to import the public user's data and build our own database. In addition, React, Node.js, and MongoDB were used to 
+        cheerio.js to import the public user's data and build our database. Besides, React, Node.js, and MongoDB were used to 
         develop responsive web apps to provide a flexible interface on a variety of devices, including mobile, tablets, and desktops.
-        Also we have developed a feedback feature that provides users with advice to improve skills by support of community survey 
+        Also, we have developed a feedback feature that provides users with advice to improve skills by the support of community survey 
         and help of Grand Master acquaintances. Finally, we used D3.js to visualize the data in circles and bar graphs, and compare 
-        them by user and by tier.`
+        them by the user and by tier.`
       ],
       ongoing: [
-        `We plan on renewing design of the homepage and providing pro features analyzing data to improve user experience. I think 
+        `We plan on renewing the design of the homepage and providing pro features analyzing data to improve user experience. I think 
         it’s important to be continuously trying analysis data to improve information gain, rather than just concentrating on 
         visualizing data.`
       ],
@@ -174,7 +174,7 @@ const data = [
     description:
       "ISTC(Inspection System of Translated Contents) is designed to ensure that translations of Intellectual properties, which translates into various languages, are addressed transparently",
     technology:
-      "To organize private channel by intellectual properties, I choose a widely used private blockchain 'Hyperledger'. I defined assets and transactions for inspecting process of translation by using hyperledger composer",
+      "To organize private channels by intellectual properties, I choose a widely used private blockchain 'Hyperledger'. I defined assets and transactions for inspecting process of translation by using Hyperledger Composer",
     image_url: tcqas,
     stacks: [javascript, hyperledger_fabric, hyperledger_composer],
     link:
@@ -182,7 +182,7 @@ const data = [
     status: "unavailable",
     detail: {
       motivation: [
-        `In Korea, the Frozen 2, which was released in the winter of 2019, was once controversial due to mistranslations. At the 
+        `In Korea, Frozen 2, which was released in the winter of 2019, was once controversial due to mistranslations. At the 
         beginning of the film, Anna sat down on the mat with Olaf and asked, “Enjoying your new permafrost?”. It translated to 
         “Do you like the new ice sheet?”.  Because Olaf melts during the non-winter seasons, Elsa has made a snow cloud over Olaf, 
         which means that Elsa now has a permanent freeze spell on Olaf's body. It was pointed out by translating it into 'ice sheet'`,
@@ -198,19 +198,19 @@ const data = [
         in various cultures and languages, it is localized and distributed through translators and inspection. However, the existing 
         translation system is informal, so that relevant stakeholders, such as the actual inspector and the provider, cannot 
         transparently check the request and the process, and it is difficult to take responsibility for the results of the work. 
-        In addition, in order to improve the quality of translations, sharing information like mutual agreement and approval 
+        Also, to improve the quality of translations, sharing information like mutual agreement and approval 
         procedures are required.`,
-        `In order to solve these existing system problems and configure the system to satisfy the requirements, we proposed and 
+        `To solve these existing system problems and configure the system to satisfy the requirements, we proposed and 
         implemented a translation content inspection system based on blockchain. Blockchain was initially used as a cryptocurrency 
-        trading platform such as Bitcoin, but recently, it is used for the purpose of decentralized process processing and various 
+        trading platform such as Bitcoin, but recently, it is used for decentralized process processing and various 
         services in the enterprise due to the irreversibility, integrity, and reliability provided by the blockchain.`,
         `Among the private blockchain platforms, Hyperledger Fabric has advantages such as identity management, ease of 
         implementation, and fast processing speed. Therefore, we implemented a translation content inspection system based on 
         Hyperledger Fabric Blockchain, considering internal process, reputation system, and safety.`
       ],
       ideate: [
-        `The key participants consist of registrants who request quality inspection of the translated content and inspectors that 
-        guarantee quality of translation. Each can participate after the identity certificate has been issued through the Membership 
+        `The key participants consist of registrants who request a quality inspection of the translated content and inspectors that 
+        guarantee the quality of translation. Each can participate after the identity certificate has been issued through the Membership 
         Service Provider (MSP) to participate in the proposed system. Those who participate in the translation will vote to select 
         the best expression among the translations, and the participants who perform the translation will receive an in-platform reward.
         The figure below illustrates the flow of this dApp transaction.`
@@ -219,7 +219,7 @@ const data = [
         `First, we created a model file (.cto) using the Hyperledger Composer Modeling language. So we defined assets, participants 
         and transactions. Next, We made a function(.js) that can execute the transaction defined in the model file using javascript. 
         Finally, we created an access management file (.acl) to suggest access rules.`,
-        `Next, We defined our business network and then packaged it in a distributable form (.bna). And we distributed this bna file to the 
+        `Next, we defined our business network and then packaged it in a distributable form (.bna). And we distributed this bna file to the 
         Hyperledger fabric and started the network. Because Hyperledger Composer automatically creates a REST API server and Angular 4
         application, that we could use to build our web application, so we just needed to focus on business network logic.`
       ],
@@ -237,7 +237,7 @@ const data = [
   {
     title: "PKNU Notifier",
     description:
-      "This app is a slack bot which parses notices of PKNU(Pukyong National University). This bot crawls notices of PKNU and compare them with previous data. if there's a new one, then the bot text a message to predefined slack channel",
+      "This app is a slack bot that parses notices of PKNU(Pukyong National University). This bot crawls notices of PKNU and compares them with previous data. if there's a new one, then the bot text a message to predefined slack channel",
     technology:
       "The Slack bot, which requests information from PKNU, parses the response with beautifulsoup, and AWS EC2 execute the code every minute to delivers new notices back to the channel",
     image_url: pknu_notifier,
@@ -246,9 +246,9 @@ const data = [
     status: "unavailable",
     detail: {
       motivation: [
-        `when I enter university, I got an advice that I'd better to check school announcements everyday. Because The school announcements 
+        `when I enter university, I got advice that I'd better check school announcements every day because the school announcements 
         included important schedules as well as informative programs to help students. So I tried to go to the school homepage and 
-        check the notices, but after a while I neglected to check the notices. As a result, I missed some good opportunities that 
+        check the notices, but after a while, I neglected to check the notices. As a result, I missed some good opportunities that 
         might have helped me, and I missed important milestones such as paying my dormitory fees. When I shared this with others, 
         I realized that some of my friends had similar problems like me, and I wondered how to solve these problems.`
       ],
@@ -259,7 +259,7 @@ const data = [
       ],
       ideate: [
         `So I wrote a Python script that requests the school announcement page to get an HTML file and then parses the announcement 
-        titles with Beautifulsoup to send a notification to the Slack channel. In addition, I have developed a software that 
+        titles with Beautifulsoup to send a notification to the Slack channel. Also, I have developed software that 
         periodically announces notices by adding them to the crontab task list in AWS EC2 (Ubuntu).`
       ],
       what_i_learned: [
@@ -268,7 +268,7 @@ const data = [
         program and thanked me for making it. It was a moment when I realized how rewarding it is to relieve the discomforts of 
         those around me. Perhaps I felt that my skills could solve many of the problems I experience in our society today, and 
         that became the reason why I develope today. It is my future hope and vision to continue studying SW technology and 
-        become a developer who solves various social problems with software.`
+        become a developer who solves various social problems with the software.`
       ],
       pknu_notifier_process: pknu_notifier_process
     }
@@ -276,8 +276,8 @@ const data = [
   {
     title: "First Planet",
     description:
-      "First Planet is a 2.5D barrage shooting game that uses energy to develop planets and defeat enemies of the universe. I participated this team and developed planetary weapon system",
-    technology: "First Planet is built using Unity, with a various assets",
+      "First Planet is a 2.5D barrage shooting game that uses energy to develop planets and defeat enemies of the universe. I participated in this team and developed a planetary weapon system",
+    technology: "First Planet is built using Unity, with various assets",
     image_url: first_planet,
     stacks: [c_sharp, unity],
     link: "https://store.steampowered.com/app/993220/FirstPlanet",
@@ -286,8 +286,8 @@ const data = [
       motivation: [
         `I came across a game creation tool called GameMaker on the Internet at 10 years old. GameMaker is a program that helps 
         to make a game with logic blocks, without coding. I used this to make simple mini-games, and it made me delighted whenever 
-        I looked at my friends having fun with my games. I didn't make great games, but it was great happiness for me to entertain 
-        people around me through my games. That's became the reason why I create this game.`
+        I looked at my friends having fun with my games. I didn't make great games, but it was a great happiness for me to entertain 
+        people around me through my games. That's become the reason why I create this game.`
       ],
       define: [
         `I used Unity and C# to create a space planet management game, and I had to study for myself because I was new to Unity. 
