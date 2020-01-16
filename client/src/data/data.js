@@ -178,7 +178,7 @@ const data = [
     image_url: tcqas,
     stacks: [javascript, hyperledger_fabric, hyperledger_composer],
     link:
-      "https://github.com/eunsukimme/Translation-Content-Quality-Assurance-System",
+      "https://github.com/eunsukimme/Inspection-System-of-Translated-Contents",
     status: "unavailable",
     detail: {
       motivation: [
