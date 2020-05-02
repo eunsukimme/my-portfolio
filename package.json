@@ -3,20 +3,13 @@
   "version": "1.0.0",
   "main": "server.js",
   "license": "MIT",
-  "devDependencies": {
-    "concurrently": "^5.0.2",
-    "nodemon": "^2.0.2"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "express": "^4.17.1",
     "react-router-dom": "^5.1.2",
     "styled-components": "^4.4.1"
   },
   "scripts": {
     "build": "cd client && yarn && yarn build",
-    "client": "cd client && yarn start",
-    "server": "nodemon server.js",
-    "dev": "concurrently -k \"yarn client\" \"yarn server\"",
-    "start": "node server.js"
+    "start": "cd client && yarn start"
   }
 }
