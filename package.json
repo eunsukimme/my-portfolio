@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build": "cd client && yarn && yarn build",
-    "start": "cd client && yarn start"
+    "start": "cd client && yarn start",
+    "deploy": "yarn build && mv client/build/index.html client/build/200.html && cd client/build && surge"
   }
 }
